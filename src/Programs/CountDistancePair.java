@@ -16,8 +16,10 @@ public class CountDistancePair {
 	}
 
 	public static void main(String[] args) {
-	   String a = "abacada";
-	   int dist = 1;
+	   String a = "abacadabbccddee";
+	   // I have changed the input
+	   int dist = 5;
+	   //I have also changed the distance
 	   System.out.println(distance(a,dist));
 
        }
