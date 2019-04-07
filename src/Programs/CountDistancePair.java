@@ -20,7 +20,10 @@ public class CountDistancePair {
 	   // I have changed the input
 	   int dist = 5;
 	   //I have also changed the distance
-	   System.out.println(distance(a,dist));
+	   //System.out.println(distance(a,dist));
+	   String s ="india +91";
+	   s = s.replaceAll("([a-z]{1,})\\s{0,}([\\+][0-9]{1,2})", "country code of $1 is $2");
+	   System.out.println(s);
 
        }
 
