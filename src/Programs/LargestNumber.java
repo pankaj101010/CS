@@ -16,5 +16,8 @@ public static int largest(int n) {
 	public static void main(String[] args) {
 		  int r =2;
   System.out.println(largest(2));
+  /*
+   * or return Math.pow(10,n)-1;
+   */
 }
 }
