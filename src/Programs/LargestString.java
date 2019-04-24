@@ -4,39 +4,40 @@ import java.util.ArrayList;
 
 public class LargestString {
 	public static String[] largest(String[]a) {
-		String [] temp = new String [a.length];
-		ArrayList<String>temp1 = new ArrayList<String>();
-		String x = " ";
+		//"avc","abcd","eeeed"
+		int v = 0;
+		ArrayList<String> b = new ArrayList<String>();
+		
 		for (int i = 0; i < a.length; i++) {
- 			for (int j = 0; j < a.length; j++) {
-				if (a[i].length()>a[j].length()) {
-					temp[i] =a[i];	 //temp.add(a[i]);
-				}
+			if (v<a[i].length()) {
+				v = a[i].length();
 			}
-		} 
-		int j = 0;
-		for (int i = 0; i < temp.length; i++) {
-			if (temp[i]==null) {
+		}
+		for (int i = 0; i < a.length; i++) {
+			if (v==a[i].length()) {
+				b.add(a[i]);
 				
 			}
-			else {
-				for (; j < temp.length; j++) {
-					temp1.add(j, temp[i]);
-					break;
-				}
-			}
 		}
-		String[] modify = new String[temp1.size()];
-		for (int i = 0; i < modify.length; i++) {
-			modify[i]=temp1.get(i);
+		String[] m = new String[b.size()];
+		for (int i = 0; i < m.length; i++) {
+			m[i] = b.get(i);
 		}
-		
-		return modify;
+		System.out.println(v);
+		return m;
 	}
+		
 
 	public static void main(String[] args) {
-		String[] s = {"abcd","eeee"}; ////{"aba", "aa", "ad", "vcd", "aba"};
-		System.out.println(s.length);
+		String[] s = {"a", 
+				 "abc", 
+				 "cbd", 
+				 "zzzzzz", 
+				 "a", 
+				 "abcdef", 
+				 "asasa", 
+				 "aaaaaa"}; ////{"aba", "aa", "ad", "vcd", "aba"};
+		//System.out.println(s.length);
 		for (String string : largest(s)) {
 			System.out.print(string+" ");
 		}
