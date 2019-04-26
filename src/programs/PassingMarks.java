@@ -1,4 +1,4 @@
-package Programs;
+package programs;
 
 public class PassingMarks {
 public static boolean marks(double pm , String gd) {

@@ -1,4 +1,4 @@
-package Programs;
+package programs;
 
 public class CountSunday {
 	public static int countSunday(int n , String day) {

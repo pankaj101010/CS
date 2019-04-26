@@ -1,4 +1,4 @@
-package Programs;
+package programs;
 
 public class IsLucky {
 public static boolean lucky(int num) {

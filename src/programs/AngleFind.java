@@ -1,4 +1,4 @@
-package Programs;
+package programs;
 
 public class AngleFind {
 	public static String angle(int m) {

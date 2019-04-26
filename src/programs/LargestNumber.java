@@ -1,4 +1,4 @@
-package Programs;
+package programs;
 
 public class LargestNumber {
 public static int largest(int n) {

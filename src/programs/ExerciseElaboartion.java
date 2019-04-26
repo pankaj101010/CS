@@ -1,4 +1,4 @@
-package Programs;
+package programs;
 
 public class ExerciseElaboartion {
 	public static int exerciseElaboration(int p, int n) {

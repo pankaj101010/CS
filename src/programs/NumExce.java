@@ -1,4 +1,4 @@
-package Programs;
+package programs;
 
 public class NumExce {
 	public static int exerciseElaboration(int p, int n) {
