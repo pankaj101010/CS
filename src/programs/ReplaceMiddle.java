@@ -9,7 +9,7 @@ public class ReplaceMiddle {
 			int[] x = new int[a.length-1];
 			int i = 0;
 			
-			 for ( int j = 0; i < a.length; j++) {
+			 for ( int j = 0; j < x.length; j++) {
 	                if (i == a.length / 2 - 1) {
 	                    x[j] = a[(a.length / 2)-1] + a[a.length / 2 ];
 	                    i += 2;
